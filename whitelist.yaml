@@ -4,23 +4,63 @@ mode: rule
 log-level: warning
 proxies:
 - name: '🌐 Неизвестно [#NotZapret] #001'
+  type: hysteria2
+  server: "\\x39\\x31\\x2e\\x32\\x34\\x30\\x2e\\x38\\x36\\x2e\\x37\\x30"
+  port: 22443
+  udp: true
+  password: "\\x33\\x66\\x36\\x33\\x63\\x38\\x36\\x63\\x2d\\x61\\x63\\x34\\x61\\x2d\\x34\\x39\\x30\\x30\\x2d\\x38\\x35\\x63\\x66\\x2d\\x34\\x66\\x65\\x64\\x66\\x39\\x33\\x63\\x32\\x63\\x61\\x35"
+  sni: "\\x68\\x79\\x2e\\x71\\x75\\x61\\x74\\x74\\x72\\x6f\\x2d\\x74\\x65\\x63\\x68\\x2e\\x72\\x75"
+  skip-cert-verify: true
+- name: '🌐 Неизвестно [#NotZapret] #002'
+  type: hysteria2
+  server: "\\x39\\x31\\x2e\\x32\\x34\\x30\\x2e\\x38\\x36\\x2e\\x37\\x30"
+  port: 22443
+  udp: true
+  password: "\\x33\\x66\\x36\\x33\\x63\\x38\\x36\\x63\\x2d\\x61\\x63\\x34\\x61\\x2d\\x34\\x39\\x30\\x30\\x2d\\x38\\x35\\x63\\x66\\x2d\\x34\\x66\\x65\\x64\\x66\\x39\\x33\\x63\\x32\\x63\\x61\\x35"
+  sni: "\\x68\\x79\\x2e\\x71\\x75\\x61\\x74\\x74\\x72\\x6f\\x2d\\x74\\x65\\x63\\x68\\x2e\\x72\\x75"
+  skip-cert-verify: true
+- name: '🌐 Неизвестно [#NotZapret] #003'
   type: vless
-  server: "\\x72\\x75\\x2d\\x63\\x32\\x64\\x39\\x33\\x37\\x39\\x33\\x31\\x65\\x2e\\x73\\x69\\x73\\x68\\x6b\\x61\\x2e\\x6e\\x65\\x74\\x77\\x6f\\x72\\x6b"
+  server: "\\x31\\x35\\x39\\x2e\\x31\\x39\\x34\\x2e\\x32\\x34\\x33\\x2e\\x31\\x37\\x35"
   port: 443
   udp: true
-  uuid: "\\x62\\x61\\x61\\x65\\x32\\x37\\x34\\x33\\x2d\\x65\\x32\\x62\\x30\\x2d\\x34\\x34\\x38\\x61\\x2d\\x39\\x65\\x39\\x37\\x2d\\x64\\x61\\x33\\x61\\x30\\x66\\x63\\x65\\x36\\x32\\x36\\x39"
+  uuid: "\\x32\\x33\\x37\\x66\\x33\\x37\\x33\\x38\\x2d\\x62\\x37\\x30\\x61\\x2d\\x34\\x31\\x34\\x36\\x2d\\x38\\x39\\x61\\x38\\x2d\\x31\\x30\\x65\\x39\\x31\\x34\\x33\\x38\\x37\\x63\\x31\\x64"
+  encryption: none
+  network: xhttp
+  tls: true
+  servername: "\\x61\\x6e\\x69\\x73\\x61\\x62\\x72\\x61\\x6e\\x64\\x2e\\x72\\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Q9-Fzdk-ww9qRMYjTvPwQXlbTfdsmEviG0ZXsPxXSxg
+    short-id: 62b5bd3a2607bc
+  xhttp-opts:
+    path: /videoapi
+- name: '🌐 Неизвестно [#NotZapret] #004'
+  type: hysteria2
+  server: "\\x39\\x31\\x2e\\x32\\x34\\x30\\x2e\\x38\\x36\\x2e\\x37\\x30"
+  port: 24443
+  udp: true
+  password: "\\x33\\x66\\x36\\x33\\x63\\x38\\x36\\x63\\x2d\\x61\\x63\\x34\\x61\\x2d\\x34\\x39\\x30\\x30\\x2d\\x38\\x35\\x63\\x66\\x2d\\x34\\x66\\x65\\x64\\x66\\x39\\x33\\x63\\x32\\x63\\x61\\x35"
+  sni: "\\x68\\x79\\x2e\\x71\\x75\\x61\\x74\\x74\\x72\\x6f\\x2d\\x74\\x65\\x63\\x68\\x2e\\x72\\x75"
+  skip-cert-verify: true
+- name: '🌐 Неизвестно [#NotZapret] #005'
+  type: vless
+  server: "\\x31\\x30\\x39\\x2e\\x36\\x39\\x2e\\x32\\x30\\x2e\\x31\\x30\\x31"
+  port: 2088
+  udp: true
+  uuid: "\\x37\\x66\\x30\\x32\\x65\\x33\\x63\\x35\\x2d\\x65\\x33\\x38\\x36\\x2d\\x34\\x63\\x66\\x65\\x2d\\x62\\x64\\x32\\x34\\x2d\\x63\\x34\\x39\\x64\\x31\\x39\\x36\\x36\\x33\\x38\\x62\\x36"
   encryption: none
   flow: xtls-rprx-vision
   tls: true
-  servername: "\\x72\\x75\\x2d\\x63\\x32\\x64\\x39\\x33\\x37\\x39\\x33\\x31\\x65\\x2e\\x73\\x69\\x73\\x68\\x6b\\x61\\x2e\\x6e\\x65\\x74\\x77\\x6f\\x72\\x6b"
-  client-fingerprint: firefox
+  servername: "\\x64\\x6c\\x2e\\x67\\x6f\\x6f\\x67\\x6c\\x65\\x2e\\x63\\x6f\\x6d"
+  client-fingerprint: random
   reality-opts:
-    public-key: uYiZWRgbowvS9uOhVZTe0FBS1pLzA3QMyQ_NfDh4_h8
-    short-id: d40efd6b362b7ec6
-- name: '🌐 Неизвестно [#NotZapret] #002'
+    public-key: ku8w0v8YcKn7TnxfleKjgqPYiWzWMrOKEwsCREJ9Plc
+    short-id: 9f8442aef1b6598f
+- name: '🌐 Неизвестно [#NotZapret] #006'
   type: vless
-  server: "\\x31\\x37\\x36\\x2e\\x31\\x30\\x39\\x2e\\x31\\x31\\x31\\x2e\\x31\\x35\\x34"
-  port: 9881
+  server: "\\x31\\x37\\x36\\x2e\\x31\\x30\\x38\\x2e\\x32\\x34\\x33\\x2e\\x31\\x38"
+  port: 9872
   udp: true
   uuid: "\\x35\\x64\\x31\\x36\\x61\\x63\\x32\\x32\\x2d\\x36\\x65\\x65\\x61\\x2d\\x34\\x32\\x36\\x66\\x2d\\x62\\x37\\x37\\x38\\x2d\\x36\\x66\\x34\\x63\\x32\\x39\\x36\\x31\\x66\\x61\\x65\\x66"
   encryption: none
@@ -29,55 +69,73 @@ proxies:
   servername: "\\x64\\x6c\\x2e\\x67\\x6f\\x6f\\x67\\x6c\\x65\\x2e\\x63\\x6f\\x6d"
   client-fingerprint: chrome
   reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabbccdd
+    public-key: sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc
+    short-id: aabb
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: '🌐 Неизвестно [#NotZapret] #003'
+- name: '🌐 Неизвестно [#NotZapret] #007'
   type: vless
-  server: "\\x31\\x38\\x35\\x2e\\x31\\x34\\x31\\x2e\\x32\\x32\\x37\\x2e\\x31\\x38\\x30"
-  port: 2053
+  server: "\\x66\\x62\\x73\\x76\\x36\\x2e\\x67\\x75\\x61\\x72\\x64\\x6f\\x72\\x61\\x2e\\x70\\x72\\x6f"
+  port: 443
   udp: true
-  uuid: "\\x32\\x63\\x36\\x33\\x34\\x39\\x37\\x37\\x2d\\x35\\x38\\x34\\x65\\x2d\\x34\\x65\\x31\\x66\\x2d\\x62\\x35\\x30\\x31\\x2d\\x31\\x62\\x37\\x30\\x63\\x37\\x37\\x61\\x36\\x37\\x34\\x33"
+  uuid: "\\x62\\x63\\x35\\x65\\x63\\x38\\x36\\x63\\x2d\\x33\\x65\\x36\\x35\\x2d\\x34\\x32\\x37\\x32\\x2d\\x39\\x39\\x34\\x63\\x2d\\x35\\x39\\x61\\x39\\x32\\x34\\x63\\x37\\x32\\x61\\x36\\x38"
   encryption: none
-  network: xhttp
+  network: ws
   tls: true
-  servername: "\\x64\\x69\\x73\\x6d\\x69\\x73\\x73\\x61\\x6c\\x74\\x72\\x65\\x65\\x2e\\x6e\\x65\\x74"
-  client-fingerprint: random
-  xhttp-opts:
-    path: /api/v1/upload
-    host: dismissaltree.net
-- name: '🌐 Неизвестно [#NotZapret] #004'
+  servername: "\\x66\\x62\\x73\\x76\\x36\\x2e\\x67\\x75\\x61\\x72\\x64\\x6f\\x72\\x61\\x2e\\x70\\x72\\x6f"
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: '🌐 Неизвестно [#NotZapret] #008'
   type: vless
-  server: "\\x37\\x38\\x2e\\x31\\x35\\x39\\x2e\\x32\\x34\\x37\\x2e\\x31\\x38\\x38"
-  port: 10010
-  udp: true
-  uuid: "\\x36\\x61\\x33\\x63\\x36\\x38\\x62\\x31\\x2d\\x64\\x34\\x62\\x38\\x2d\\x34\\x64\\x66\\x66\\x2d\\x39\\x37\\x35\\x66\\x2d\\x61\\x30\\x31\\x64\\x61\\x34\\x31\\x38\\x34\\x32\\x32\\x35"
-  encryption: none
-  flow: xtls-rprx-vision
-  tls: true
-  servername: "\\x65\\x68\\x2e\\x76\\x6b\\x2e\\x63\\x6f\\x6d"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 0_FWbcTe6tvBuSZ7_7PrMaNmg44a8VxYRXPKjZuERwQ
-    short-id: a150dff4
-- name: '🌐 Неизвестно [#NotZapret] #005'
-  type: vless
-  server: "\\x31\\x37\\x36\\x2e\\x31\\x30\\x38\\x2e\\x32\\x34\\x39\\x2e\\x31\\x38\\x39"
-  port: 9881
+  server: "\\x31\\x37\\x36\\x2e\\x31\\x30\\x38\\x2e\\x32\\x34\\x36\\x2e\\x37\\x33"
+  port: 9873
   udp: true
   uuid: "\\x35\\x64\\x31\\x36\\x61\\x63\\x32\\x32\\x2d\\x36\\x65\\x65\\x61\\x2d\\x34\\x32\\x36\\x66\\x2d\\x62\\x37\\x37\\x38\\x2d\\x36\\x66\\x34\\x63\\x32\\x39\\x36\\x31\\x66\\x61\\x65\\x66"
   encryption: none
   network: grpc
   tls: true
   servername: "\\x64\\x6c\\x2e\\x67\\x6f\\x6f\\x67\\x6c\\x65\\x2e\\x63\\x6f\\x6d"
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
-    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
-    short-id: aabb
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabbccdd
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: '🌐 Неизвестно [#NotZapret] #006'
+- name: '🌐 Неизвестно [#NotZapret] #009'
+  type: vless
+  server: "\\x74\\x67\\x66\\x72\\x65\\x65\\x2e\\x72\\x75\\x73\\x68\\x2d\\x73\\x65\\x72\\x76\\x65\\x72\\x2e\\x63\\x6f\\x6d"
+  port: 443
+  udp: true
+  uuid: "\\x65\\x62\\x64\\x31\\x63\\x30\\x64\\x36\\x2d\\x37\\x66\\x66\\x34\\x2d\\x34\\x62\\x39\\x66\\x2d\\x38\\x36\\x39\\x32\\x2d\\x32\\x33\\x37\\x35\\x31\\x37\\x61\\x32\\x37\\x61\\x36\\x34"
+  encryption: none
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\\x61\\x6e\\x79\\x66\\x69\\x6c\\x65\\x32\\x66\\x69\\x6c\\x65\\x2e\\x63\\x6f\\x6d"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
+    short-id: 64c1fe36c7846400
+- name: '🌐 Неизвестно [#NotZapret] #010'
+  type: vless
+  server: "\\x31\\x38\\x35\\x2e\\x39\\x31\\x2e\\x35\\x32\\x2e\\x31\\x33"
+  port: 30007
+  udp: true
+  uuid: "\\x35\\x62\\x62\\x61\\x33\\x35\\x35\\x38\\x2d\\x61\\x64\\x31\\x63\\x2d\\x34\\x64\\x39\\x37\\x2d\\x61\\x33\\x36\\x30\\x2d\\x37\\x64\\x39\\x39\\x33\\x64\\x35\\x30\\x33\\x61\\x62\\x64"
+  encryption: none
+  flow: xtls-rprx-vision
+  network: raw
+  tls: true
+  servername: "\\x73\\x74\\x6f\\x72\\x61\\x67\\x65\\x2e\\x79\\x61\\x6e\\x64\\x65\\x78\\x63\\x6c\\x6f\\x75\\x64\\x2e\\x6e\\x65\\x74"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: UR-ELTbCCTAAvg_y8vIznWFkGkCKFFaEAVgTtPYNCCk
+    short-id: 54861d36
+- name: '🌐 Неизвестно [#NotZapret] #011'
   type: vless
   server: "\\x34\\x35\\x2e\\x31\\x32\\x2e\\x37\\x35\\x2e\\x32\\x34\\x32"
   port: 26424
@@ -86,24 +144,10 @@ proxies:
   encryption: none
   tls: true
   servername: "\\x79\\x61\\x2e\\x72\\x75"
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🌐 Неизвестно [#NotZapret] #007'
-  type: vless
-  server: "\\x39\\x30\\x2e\\x31\\x35\\x36\\x2e\\x32\\x31\\x38\\x2e\\x31\\x36\\x33"
-  port: 443
-  udp: true
-  uuid: "\\x61\\x64\\x63\\x31\\x31\\x66\\x33\\x30\\x2d\\x65\\x34\\x63\\x62\\x2d\\x34\\x39\\x38\\x35\\x2d\\x62\\x66\\x35\\x65\\x2d\\x66\\x39\\x64\\x65\\x64\\x36\\x39\\x63\\x30\\x31\\x39\\x66"
-  encryption: none
-  flow: xtls-rprx-vision
-  tls: true
-  servername: "\\x65\\x68\\x2e\\x76\\x6b\\x2e\\x72\\x75"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
 proxy-groups:
 - name: ВЫБОР СЕРВЕРА
   type: select
@@ -115,5 +159,9 @@ proxy-groups:
   - '🌐 Неизвестно [#NotZapret] #005'
   - '🌐 Неизвестно [#NotZapret] #006'
   - '🌐 Неизвестно [#NotZapret] #007'
+  - '🌐 Неизвестно [#NotZapret] #008'
+  - '🌐 Неизвестно [#NotZapret] #009'
+  - '🌐 Неизвестно [#NotZapret] #010'
+  - '🌐 Неизвестно [#NotZapret] #011'
 rules:
 - 'MATCH,🌐 Неизвестно [#NotZapret] #001'
