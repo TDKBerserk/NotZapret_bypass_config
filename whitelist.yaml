@@ -4,139 +4,9 @@ mode: rule
 log-level: warning
 proxies:
 - name: '🌐 Неизвестно [#NotZapret] #001'
-  type: hysteria2
-  server: "\\x39\\x31\\x2e\\x32\\x34\\x30\\x2e\\x38\\x36\\x2e\\x37\\x30"
-  port: 22443
-  udp: true
-  password: "\\x33\\x66\\x36\\x33\\x63\\x38\\x36\\x63\\x2d\\x61\\x63\\x34\\x61\\x2d\\x34\\x39\\x30\\x30\\x2d\\x38\\x35\\x63\\x66\\x2d\\x34\\x66\\x65\\x64\\x66\\x39\\x33\\x63\\x32\\x63\\x61\\x35"
-  sni: "\\x68\\x79\\x2e\\x71\\x75\\x61\\x74\\x74\\x72\\x6f\\x2d\\x74\\x65\\x63\\x68\\x2e\\x72\\x75"
-  skip-cert-verify: true
-- name: '🌐 Неизвестно [#NotZapret] #002'
   type: vless
-  server: "\\x74\\x67\\x31\\x2e\\x63\\x64\\x6e\\x70\\x68\\x6f\\x74\\x6f\\x73\\x2e\\x6f\\x72\\x67"
-  port: 443
-  udp: true
-  uuid: "\\x66\\x30\\x34\\x63\\x63\\x38\\x31\\x30\\x2d\\x61\\x61\\x66\\x32\\x2d\\x34\\x61\\x37\\x62\\x2d\\x38\\x63\\x61\\x64\\x2d\\x33\\x35\\x36\\x63\\x64\\x64\\x33\\x30\\x64\\x33\\x39\\x34"
-  encryption: none
-  network: xhttp
-  tls: true
-  servername: "\\x74\\x67\\x31\\x2e\\x63\\x64\\x6e\\x70\\x68\\x6f\\x74\\x6f\\x73\\x2e\\x6f\\x72\\x67"
-  client-fingerprint: random
-  xhttp-opts:
-    path: /api/v1/
-- name: '🌐 Неизвестно [#NotZapret] #003'
-  type: vless
-  server: "\\x34\\x35\\x2e\\x31\\x33\\x32\\x2e\\x31\\x37\\x36\\x2e\\x31\\x33\\x34"
-  port: 9881
-  udp: true
-  uuid: "\\x35\\x64\\x31\\x36\\x61\\x63\\x32\\x32\\x2d\\x36\\x65\\x65\\x61\\x2d\\x34\\x32\\x36\\x66\\x2d\\x62\\x37\\x37\\x38\\x2d\\x36\\x66\\x34\\x63\\x32\\x39\\x36\\x31\\x66\\x61\\x65\\x66"
-  encryption: none
-  network: grpc
-  tls: true
-  servername: "\\x64\\x6c\\x2e\\x67\\x6f\\x6f\\x67\\x6c\\x65\\x2e\\x63\\x6f\\x6d"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabb
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '🌐 Неизвестно [#NotZapret] #004'
-  type: vless
-  server: "\\x31\\x39\\x33\\x2e\\x31\\x36\\x30\\x2e\\x32\\x30\\x38\\x2e\\x31\\x33\\x37"
-  port: 443
-  udp: true
-  uuid: "\\x61\\x30\\x38\\x62\\x39\\x63\\x32\\x34\\x2d\\x33\\x32\\x35\\x32\\x2d\\x34\\x66\\x37\\x66\\x2d\\x61\\x66\\x61\\x39\\x2d\\x34\\x61\\x33\\x37\\x30\\x34\\x30\\x39\\x35\\x30\\x66\\x64"
-  encryption: none
-  network: grpc
-  tls: true
-  servername: "\\x61\\x70\\x69\\x2e\\x68\\x65\\x78\\x61\\x67\\x6f\\x6e\\x69\\x63\\x66\\x69\\x65\\x6c\\x64\\x2e\\x63\\x6f\\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
-    short-id: a1b2c3d4e5f6a7b8
-  grpc-opts:
-    grpc-service-name: moktana.net.v1.StreamService
-- name: '🌐 Неизвестно [#NotZapret] #005'
-  type: vless
-  server: "\\x31\\x36\\x38\\x2e\\x32\\x32\\x32\\x2e\\x31\\x39\\x34\\x2e\\x31\\x33\\x38"
-  port: 9880
-  udp: true
-  uuid: "\\x35\\x64\\x31\\x36\\x61\\x63\\x32\\x32\\x2d\\x36\\x65\\x65\\x61\\x2d\\x34\\x32\\x36\\x66\\x2d\\x62\\x37\\x37\\x38\\x2d\\x36\\x66\\x34\\x63\\x32\\x39\\x36\\x31\\x66\\x61\\x65\\x66"
-  encryption: none
-  network: grpc
-  tls: true
-  servername: "\\x64\\x6c\\x2e\\x67\\x6f\\x6f\\x67\\x6c\\x65\\x2e\\x63\\x6f\\x6d"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '🌐 Неизвестно [#NotZapret] #006'
-  type: vless
-  server: "\\x34\\x35\\x2e\\x31\\x33\\x32\\x2e\\x31\\x37\\x37\\x2e\\x37\\x32"
-  port: 9844
-  udp: true
-  uuid: "\\x35\\x64\\x31\\x36\\x61\\x63\\x32\\x32\\x2d\\x36\\x65\\x65\\x61\\x2d\\x34\\x32\\x36\\x66\\x2d\\x62\\x37\\x37\\x38\\x2d\\x36\\x66\\x34\\x63\\x32\\x39\\x36\\x31\\x66\\x61\\x65\\x66"
-  encryption: none
-  network: grpc
-  tls: true
-  servername: "\\x64\\x6c\\x2e\\x67\\x6f\\x6f\\x67\\x6c\\x65\\x2e\\x63\\x6f\\x6d"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aa
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '🌐 Неизвестно [#NotZapret] #007'
-  type: vless
-  server: "\\x31\\x37\\x36\\x2e\\x31\\x30\\x38\\x2e\\x32\\x34\\x35\\x2e\\x31\\x36\\x37"
-  port: 9881
-  udp: true
-  uuid: "\\x35\\x64\\x31\\x36\\x61\\x63\\x32\\x32\\x2d\\x36\\x65\\x65\\x61\\x2d\\x34\\x32\\x36\\x66\\x2d\\x62\\x37\\x37\\x38\\x2d\\x36\\x66\\x34\\x63\\x32\\x39\\x36\\x31\\x66\\x61\\x65\\x66"
-  encryption: none
-  network: grpc
-  tls: true
-  servername: "\\x64\\x6c\\x2e\\x67\\x6f\\x6f\\x67\\x6c\\x65\\x2e\\x63\\x6f\\x6d"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabbccdd
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '🌐 Неизвестно [#NotZapret] #008'
-  type: vless
-  server: "\\x67\\x65\\x72\\x2e\\x67\\x34\\x6d\\x31\\x2e\\x62\\x69\\x7a"
-  port: 443
-  udp: true
-  uuid: "\\x65\\x30\\x62\\x39\\x66\\x62\\x30\\x66\\x2d\\x31\\x62\\x62\\x64\\x2d\\x34\\x37\\x38\\x62\\x2d\\x39\\x35\\x38\\x30\\x2d\\x63\\x32\\x32\\x39\\x34\\x37\\x37\\x38\\x33\\x33\\x38\\x62"
-  encryption: none
-  network: grpc
-  tls: true
-  servername: "\\x67\\x65\\x72\\x2e\\x67\\x34\\x6d\\x31\\x2e\\x62\\x69\\x7a"
-  client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: cdn.v1.DeService
-- name: '🌐 Неизвестно [#NotZapret] #009'
-  type: vless
-  server: "\\x31\\x37\\x36\\x2e\\x31\\x30\\x39\\x2e\\x31\\x30\\x35\\x2e\\x31\\x38\\x36"
-  port: 9892
-  udp: true
-  uuid: "\\x35\\x64\\x31\\x36\\x61\\x63\\x32\\x32\\x2d\\x36\\x65\\x65\\x61\\x2d\\x34\\x32\\x36\\x66\\x2d\\x62\\x37\\x37\\x38\\x2d\\x36\\x66\\x34\\x63\\x32\\x39\\x36\\x31\\x66\\x61\\x65\\x66"
-  encryption: none
-  network: grpc
-  tls: true
-  servername: "\\x64\\x6c\\x2e\\x67\\x6f\\x6f\\x67\\x6c\\x65\\x2e\\x63\\x6f\\x6d"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aa
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '🌐 Неизвестно [#NotZapret] #010'
-  type: vless
-  server: "\\x31\\x37\\x36\\x2e\\x31\\x30\\x38\\x2e\\x32\\x34\\x36\\x2e\\x35\\x38"
-  port: 9881
+  server: "\\x34\\x35\\x2e\\x31\\x33\\x32\\x2e\\x31\\x37\\x37\\x2e\\x39\\x36"
+  port: 9889
   udp: true
   uuid: "\\x35\\x64\\x31\\x36\\x61\\x63\\x32\\x32\\x2d\\x36\\x65\\x65\\x61\\x2d\\x34\\x32\\x36\\x66\\x2d\\x62\\x37\\x37\\x38\\x2d\\x36\\x66\\x34\\x63\\x32\\x39\\x36\\x31\\x66\\x61\\x65\\x66"
   encryption: none
@@ -148,22 +18,59 @@ proxies:
     public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: '🌐 Неизвестно [#NotZapret] #011'
+- name: '🌐 Неизвестно [#NotZapret] #002'
   type: vless
-  server: "\\x34\\x35\\x2e\\x31\\x33\\x32\\x2e\\x31\\x37\\x36\\x2e\\x31\\x35\\x37"
-  port: 9872
+  server: "\\x31\\x38\\x35\\x2e\\x31\\x34\\x31\\x2e\\x32\\x32\\x37\\x2e\\x31\\x38\\x30"
+  port: 2053
+  udp: true
+  uuid: "\\x32\\x63\\x36\\x33\\x34\\x39\\x37\\x37\\x2d\\x35\\x38\\x34\\x65\\x2d\\x34\\x65\\x31\\x66\\x2d\\x62\\x35\\x30\\x31\\x2d\\x31\\x62\\x37\\x30\\x63\\x37\\x37\\x61\\x36\\x37\\x34\\x33"
+  encryption: none
+  network: xhttp
+  tls: true
+  servername: "\\x64\\x69\\x73\\x6d\\x69\\x73\\x73\\x61\\x6c\\x74\\x72\\x65\\x65\\x2e\\x6e\\x65\\x74"
+  client-fingerprint: random
+  alpn:
+  - h2
+  - http/1.1
+  xhttp-opts:
+    path: /api/v1/upload
+    host: dismissaltree.net
+- name: '🌐 Неизвестно [#NotZapret] #003'
+  type: vless
+  server: "\\x31\\x37\\x36\\x2e\\x31\\x30\\x39\\x2e\\x31\\x30\\x35\\x2e\\x31\\x38\\x36"
+  port: 9892
   udp: true
   uuid: "\\x35\\x64\\x31\\x36\\x61\\x63\\x32\\x32\\x2d\\x36\\x65\\x65\\x61\\x2d\\x34\\x32\\x36\\x66\\x2d\\x62\\x37\\x37\\x38\\x2d\\x36\\x66\\x34\\x63\\x32\\x39\\x36\\x31\\x66\\x61\\x65\\x66"
   encryption: none
   network: grpc
   tls: true
   servername: "\\x64\\x6c\\x2e\\x67\\x6f\\x6f\\x67\\x6c\\x65\\x2e\\x63\\x6f\\x6d"
-  client-fingerprint: safari
+  client-fingerprint: edge
   reality-opts:
-    public-key: sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
     short-id: aa
   grpc-opts:
     grpc-service-name: grpc-tunnel
+- name: '🌐 Неизвестно [#NotZapret] #004'
+  type: vless
+  server: "\\x31\\x35\\x39\\x2e\\x31\\x39\\x34\\x2e\\x32\\x34\\x34\\x2e\\x31\\x37\\x32"
+  port: 443
+  udp: true
+  uuid: "\\x65\\x30\\x62\\x39\\x66\\x62\\x30\\x66\\x2d\\x31\\x62\\x62\\x64\\x2d\\x34\\x37\\x38\\x62\\x2d\\x39\\x35\\x38\\x30\\x2d\\x63\\x32\\x32\\x39\\x34\\x37\\x37\\x38\\x33\\x33\\x38\\x62"
+  encryption: none
+  network: grpc
+  tls: true
+  servername: "\\x67\\x65\\x72\\x2e\\x67\\x34\\x6d\\x31\\x2e\\x62\\x69\\x7a"
+  client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: cdn.v1.DeService
+- name: '🌐 Неизвестно [#NotZapret] #005'
+  type: vless
+  server: "\\x31\\x33\\x35\\x2e\\x31\\x30\\x36\\x2e\\x32\\x32\\x33\\x2e\\x32\\x34\\x31"
+  port: 655
+  udp: true
+  uuid: "\\x31\\x62\\x37\\x31\\x39\\x64\\x65\\x61\\x2d\\x38\\x31\\x37\\x34\\x2d\\x34\\x63\\x32\\x37\\x2d\\x61\\x65\\x35\\x62\\x2d\\x64\\x30\\x64\\x34\\x31\\x65\\x32\\x32\\x37\\x64\\x61\\x30"
+  encryption: none
 proxy-groups:
 - name: ВЫБОР СЕРВЕРА
   type: select
@@ -173,11 +80,5 @@ proxy-groups:
   - '🌐 Неизвестно [#NotZapret] #003'
   - '🌐 Неизвестно [#NotZapret] #004'
   - '🌐 Неизвестно [#NotZapret] #005'
-  - '🌐 Неизвестно [#NotZapret] #006'
-  - '🌐 Неизвестно [#NotZapret] #007'
-  - '🌐 Неизвестно [#NotZapret] #008'
-  - '🌐 Неизвестно [#NotZapret] #009'
-  - '🌐 Неизвестно [#NotZapret] #010'
-  - '🌐 Неизвестно [#NotZapret] #011'
 rules:
 - 'MATCH,🌐 Неизвестно [#NotZapret] #001'
