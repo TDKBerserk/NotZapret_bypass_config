@@ -2,43 +2,11 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: warning
-proxies:
-- name: '🌐 Неизвестно [#NotZapret] #001'
-  type: vless
-  server: "\\x64\\x69\\x73\\x6d\\x69\\x73\\x73\\x61\\x6c\\x74\\x72\\x65\\x65\\x2e\\x6e\\x65\\x74"
-  port: 2053
-  udp: true
-  uuid: "\\x32\\x63\\x36\\x33\\x34\\x39\\x37\\x37\\x2d\\x35\\x38\\x34\\x65\\x2d\\x34\\x65\\x31\\x66\\x2d\\x62\\x35\\x30\\x31\\x2d\\x31\\x62\\x37\\x30\\x63\\x37\\x37\\x61\\x36\\x37\\x34\\x33"
-  encryption: none
-  network: xhttp
-  tls: true
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  xhttp-opts:
-    path: /api/v1/upload
-- name: '🌐 Неизвестно [#NotZapret] #002'
-  type: vless
-  server: "\\x31\\x37\\x36\\x2e\\x31\\x30\\x38\\x2e\\x32\\x35\\x32\\x2e\\x31\\x33\\x39"
-  port: 9881
-  udp: true
-  uuid: "\\x35\\x64\\x31\\x36\\x61\\x63\\x32\\x32\\x2d\\x36\\x65\\x65\\x61\\x2d\\x34\\x32\\x36\\x66\\x2d\\x62\\x37\\x37\\x38\\x2d\\x36\\x66\\x34\\x63\\x32\\x39\\x36\\x31\\x66\\x61\\x65\\x66"
-  encryption: none
-  network: grpc
-  tls: true
-  servername: "\\x64\\x6c\\x2e\\x67\\x6f\\x6f\\x67\\x6c\\x65\\x2e\\x63\\x6f\\x6d"
-  client-fingerprint: ios
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabb
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
+proxies: []
 proxy-groups:
 - name: ВЫБОР СЕРВЕРА
   type: select
   proxies:
-  - '🌐 Неизвестно [#NotZapret] #001'
-  - '🌐 Неизвестно [#NotZapret] #002'
+  - DIRECT
 rules:
-- 'MATCH,🌐 Неизвестно [#NotZapret] #001'
+- MATCH,DIRECT
