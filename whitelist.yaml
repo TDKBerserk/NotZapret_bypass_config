@@ -2,41 +2,11 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: warning
-proxies:
-- name: '🌐 Неизвестно [#NotZapret] #001'
-  type: vless
-  server: "\\x39\\x34\\x2e\\x31\\x34\\x31\\x2e\\x31\\x36\\x32\\x2e\\x38\\x38"
-  port: 443
-  udp: true
-  uuid: "\\x32\\x36\\x37\\x62\\x33\\x61\\x37\\x39\\x2d\\x38\\x31\\x66\\x32\\x2d\\x34\\x32\\x61\\x63\\x2d\\x61\\x34\\x30\\x39\\x2d\\x63\\x32\\x33\\x62\\x30\\x35\\x62\\x36\\x33\\x32\\x39\\x64"
-  encryption: none
-  flow: xtls-rprx-vision
-  tls: true
-  servername: "\\x73\\x72\\x76\\x38\\x38\\x2e\\x62\\x62\\x6f\\x62\\x72\\x2e\\x77\\x69\\x6e"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: K9e4gQJX1KLEmvsKOp9CtJ-o-L4EIpYOPTg5Spo9MWs
-    short-id: 65ceab72c331f307
-- name: '🌐 Неизвестно [#NotZapret] #002'
-  type: vless
-  server: "\\x33\\x31\\x2e\\x31\\x33\\x31\\x2e\\x32\\x35\\x31\\x2e\\x31\\x32\\x39"
-  port: 10009
-  udp: true
-  uuid: "\\x62\\x64\\x63\\x66\\x63\\x39\\x62\\x63\\x2d\\x64\\x33\\x65\\x65\\x2d\\x34\\x30\\x33\\x63\\x2d\\x61\\x61\\x31\\x33\\x2d\\x31\\x66\\x34\\x66\\x63\\x62\\x39\\x36\\x35\\x61\\x35\\x62"
-  encryption: none
-  network: xhttp
-  tls: true
-  servername: "\\x69\\x74\\x2d\\x76\\x70\\x6e\\x2e\\x6e\\x69\\x6d\\x61\\x72\\x6b\\x6f\\x2e\\x6f\\x72\\x67"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: IjhCLRnZkoSPYn-QVUyTV4-7wOLgxii2i0Aabk9tMkI
-  xhttp-opts:
-    path: /ss-it-8444-29/
+proxies: []
 proxy-groups:
 - name: ВЫБОР СЕРВЕРА
   type: select
   proxies:
-  - '🌐 Неизвестно [#NotZapret] #001'
-  - '🌐 Неизвестно [#NotZapret] #002'
+  - DIRECT
 rules:
-- 'MATCH,🌐 Неизвестно [#NotZapret] #001'
+- MATCH,DIRECT
