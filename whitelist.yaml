@@ -3,37 +3,23 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: '🌐 Неизвестно [#NotZapret] #001'
+- name: '🇷🇺 Россия [#NotZapret] #001'
   type: vless
-  server: "\\x77\\x73\\x74\\x67\\x2e\\x64\\x61\\x74\\x61\\x73\\x79\\x6e\\x63\\x74\\x72\\x75\\x65\\x2e\\x6f\\x6e\\x6c\\x69\\x6e\\x65"
-  port: 443
+  server: "\\x64\\x65\\x2d\\x30\\x33\\x2e\\x61\\x76\\x72\\x6f\\x72\\x61\\x73\\x65\\x72\\x76\\x69\\x63\\x65\\x2e\\x6f\\x6e\\x6c\\x69\\x6e\\x65"
+  port: 8443
   udp: true
-  uuid: "\\x66\\x66\\x30\\x62\\x36\\x62\\x61\\x38\\x2d\\x62\\x65\\x64\\x30\\x2d\\x34\\x63\\x34\\x64\\x2d\\x62\\x62\\x63\\x39\\x2d\\x32\\x33\\x61\\x66\\x34\\x37\\x35\\x38\\x32\\x36\\x31\\x35"
+  uuid: "\\x30\\x36\\x38\\x63\\x37\\x33\\x66\\x35\\x2d\\x63\\x32\\x66\\x63\\x2d\\x34\\x35\\x37\\x39\\x2d\\x39\\x36\\x62\\x65\\x2d\\x36\\x65\\x33\\x37\\x63\\x66\\x63\\x66\\x35\\x38\\x65\\x64"
   encryption: none
-  network: ws
+  network: xhttp
   tls: true
-  servername: "\\x77\\x73\\x74\\x67\\x2e\\x64\\x61\\x74\\x61\\x73\\x79\\x6e\\x63\\x74\\x72\\x75\\x65\\x2e\\x6f\\x6e\\x6c\\x69\\x6e\\x65"
-  client-fingerprint: qq
-  ws-opts:
-    path: /api/connect
-    headers:
-      Host: wstg.datasynctrue.online
-- name: '🌐 Неизвестно [#NotZapret] #002'
-  type: vless
-  server: "\\x34\\x35\\x2e\\x39\\x2e\\x31\\x33\\x2e\\x39\\x39"
-  port: 443
-  udp: true
-  uuid: "\\x34\\x38\\x39\\x66\\x31\\x37\\x31\\x37\\x2d\\x64\\x33\\x63\\x37\\x2d\\x34\\x39\\x34\\x30\\x2d\\x61\\x64\\x36\\x38\\x2d\\x62\\x64\\x62\\x64\\x62\\x61\\x62\\x38\\x35\\x37\\x66\\x34"
-  encryption: none
-  network: ws
-  tls: true
-  servername: "\\x78\\x2e\\x6d\\x2d\\x39\\x30\\x2e\\x78\\x79\\x7a"
-  client-fingerprint: firefox
-  ws-opts:
-    path: t.me/TEAMNETGRATISCOL
-    headers:
-      Host: x.m-90.xyz
-- name: '🌐 Неизвестно [#NotZapret] #003'
+  servername: "\\x63\\x64\\x6e\\x2d\\x64\\x65\\x2e\\x63\\x61\\x68\\x6d\\x65\\x73\\x2e\\x73\\x70\\x61\\x63\\x65"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: LP7yXSC50lHfxW-BuRQ3OLDBNncF2KVnMgVJuX9XR2w
+    short-id: 35cd2022241da999
+  xhttp-opts:
+    path: /xhttp
+- name: '🇳🇱 Нидерланды [#NotZapret] #002'
   type: vless
   server: "\\x31\\x38\\x35\\x2e\\x31\\x34\\x31\\x2e\\x32\\x32\\x37\\x2e\\x31\\x38\\x30"
   port: 2053
@@ -43,7 +29,7 @@ proxies:
   network: xhttp
   tls: true
   servername: "\\x64\\x69\\x73\\x6d\\x69\\x73\\x73\\x61\\x6c\\x74\\x72\\x65\\x65\\x2e\\x6e\\x65\\x74"
-  client-fingerprint: random
+  client-fingerprint: chrome
   xhttp-opts:
     path: /api/v1/upload
     host: dismissaltree.net
@@ -51,8 +37,7 @@ proxy-groups:
 - name: ВЫБОР СЕРВЕРА
   type: select
   proxies:
-  - '🌐 Неизвестно [#NotZapret] #001'
-  - '🌐 Неизвестно [#NotZapret] #002'
-  - '🌐 Неизвестно [#NotZapret] #003'
+  - '🇷🇺 Россия [#NotZapret] #001'
+  - '🇳🇱 Нидерланды [#NotZapret] #002'
 rules:
-- 'MATCH,🌐 Неизвестно [#NotZapret] #001'
+- 'MATCH,🇷🇺 Россия [#NotZapret] #001'
