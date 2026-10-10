@@ -3,85 +3,25 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: '🌐 Неизвестно [#NotZapret] #001'
+- name: '🇷🇺 Россия [#NotZapret] #001'
   type: vless
-  server: "\\x39\\x30\\x2e\\x31\\x35\\x36\\x2e\\x32\\x31\\x38\\x2e\\x31\\x36\\x33"
-  port: 443
+  server: "\\x31\\x35\\x33\\x2e\\x37\\x36\\x2e\\x31\\x36\\x31\\x2e\\x35\\x37"
+  port: 2096
   udp: true
-  uuid: "\\x61\\x64\\x63\\x31\\x31\\x66\\x33\\x30\\x2d\\x65\\x34\\x63\\x62\\x2d\\x34\\x39\\x38\\x35\\x2d\\x62\\x66\\x35\\x65\\x2d\\x66\\x39\\x64\\x65\\x64\\x36\\x39\\x63\\x30\\x31\\x39\\x66"
+  uuid: "\\x33\\x66\\x63\\x65\\x63\\x34\\x65\\x34\\x2d\\x61\\x36\\x37\\x34\\x2d\\x34\\x34\\x64\\x32\\x2d\\x38\\x63\\x61\\x65\\x2d\\x63\\x32\\x35\\x33\\x63\\x65\\x63\\x34\\x33\\x62\\x39\\x63"
   encryption: none
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: "\\x65\\x68\\x2e\\x76\\x6b\\x2e\\x72\\x75"
-  client-fingerprint: chrome
+  servername: "\\x69\\x64\\x2e\\x76\\x6b\\x2e\\x63\\x6f\\x6d"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-- name: '🇷🇺 Россия [#NotZapret] #002'
-  type: vless
-  server: "\\x39\\x30\\x2e\\x31\\x35\\x36\\x2e\\x32\\x31\\x38\\x2e\\x31\\x36\\x33"
-  port: 443
-  udp: true
-  uuid: "\\x61\\x64\\x63\\x31\\x31\\x66\\x33\\x30\\x2d\\x65\\x34\\x63\\x62\\x2d\\x34\\x39\\x38\\x35\\x2d\\x62\\x66\\x35\\x65\\x2d\\x66\\x39\\x64\\x65\\x64\\x36\\x39\\x63\\x30\\x31\\x39\\x66"
-  encryption: none
-  flow: xtls-rprx-vision
-  tls: true
-  servername: "\\x65\\x68\\x2e\\x76\\x6b\\x2e\\x72\\x75"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-- name: '🇷🇺 Россия [#NotZapret] #003'
-  type: vless
-  server: "\\x34\\x35\\x2e\\x31\\x34\\x34\\x2e\\x31\\x37\\x39\\x2e\\x31\\x31\\x32"
-  port: 443
-  udp: true
-  uuid: "\\x38\\x36\\x30\\x39\\x36\\x31\\x38\\x38\\x2d\\x30\\x65\\x63\\x65\\x2d\\x34\\x31\\x61\\x66\\x2d\\x39\\x32\\x32\\x64\\x2d\\x37\\x39\\x32\\x63\\x35\\x66\\x39\\x36\\x63\\x33\\x61\\x64"
-  encryption: none
-  flow: xtls-rprx-vision
-  tls: true
-  servername: "\\x72\\x75\\x2e\\x63\\x61\\x6c\\x6f\\x72\\x69\\x62\\x72\\x6f\\x2e\\x75\\x6e\\x6f"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 8cN2ldJOVJ_ulUORM3mblWMg1etGrTruJoAtYyhE5h8
-    short-id: 73cd09c320ca209d
-- name: '🇷🇺 Россия [#NotZapret] #004'
-  type: vless
-  server: "\\x34\\x35\\x2e\\x31\\x32\\x2e\\x37\\x35\\x2e\\x32\\x34\\x32"
-  port: 26424
-  udp: true
-  uuid: "\\x36\\x33\\x33\\x66\\x34\\x32\\x34\\x65\\x2d\\x32\\x62\\x31\\x31\\x2d\\x34\\x38\\x64\\x61\\x2d\\x61\\x36\\x62\\x33\\x2d\\x61\\x38\\x34\\x39\\x64\\x64\\x37\\x31\\x34\\x35\\x36\\x66"
-  encryption: none
-  network: raw
-  tls: true
-  servername: "\\x79\\x61\\x2e\\x72\\x75"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-- name: '🌐 Неизвестно [#NotZapret] #005'
-  type: vless
-  server: "\\x32\\x31\\x37\\x2e\\x31\\x34\\x39\\x2e\\x33\\x30\\x2e\\x37\\x33"
-  port: 8443
-  udp: true
-  uuid: "\\x65\\x65\\x31\\x38\\x64\\x31\\x38\\x38\\x2d\\x31\\x34\\x63\\x63\\x2d\\x34\\x31\\x37\\x65\\x2d\\x62\\x65\\x62\\x31\\x2d\\x37\\x30\\x65\\x34\\x61\\x64\\x64\\x36\\x64\\x30\\x32\\x33"
-  encryption: none
-  flow: xtls-rprx-vision
-  network: raw
-  tls: true
-  servername: "\\x74\\x69\\x6d\\x65\\x2e\\x6e\\x7a\\x74\\x76\\x70\\x6e\\x2e\\x63\\x6f\\x6d"
-  client-fingerprint: random
-  reality-opts:
-    public-key: p87u9cOh91BaXsKS-HoCoOUXxHcOwkM6ByTWmz_6b2Y
-    short-id: 0da7e14db353e7d0
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
 proxy-groups:
 - name: ВЫБОР СЕРВЕРА
   type: select
   proxies:
-  - '🌐 Неизвестно [#NotZapret] #001'
-  - '🇷🇺 Россия [#NotZapret] #002'
-  - '🇷🇺 Россия [#NotZapret] #003'
-  - '🇷🇺 Россия [#NotZapret] #004'
-  - '🌐 Неизвестно [#NotZapret] #005'
+  - '🇷🇺 Россия [#NotZapret] #001'
 rules:
-- 'MATCH,🌐 Неизвестно [#NotZapret] #001'
+- 'MATCH,🇷🇺 Россия [#NotZapret] #001'
